@@ -3,7 +3,7 @@ on: [push, pull_request]
 
 jobs:
   build:
-    runs-on: alma-latest
+    runs-on: alma8-latest
 
     steps:
       # Important: This sets up your GITHUB_WORKSPACE environment variable
