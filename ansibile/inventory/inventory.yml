@@ -1,0 +1,22 @@
+---
+all:
+  hosts:
+  children:
+    web:
+      hosts:
+        nginx.cloud.phx3.gdg
+    redis:
+      hosts:
+         redis.cloud.phx3.gdg
+    win:
+      hosts:
+        winhost.cloud.phx3.gdg
+  vars:
+    domain: spaingreatestvideos.com
+    ansible_ssh_user: 0262f52943d3ecm
+    ansible_ssh_pass: Bj%9#wRh+GnSa!p3
+    ansible_user: 0262f52943d3ecm
+    ansible_pass: Bj%9#wRh+GnSa!p3
+    ansible_connection: winrm
+    ansible_winrm_server_cert_validation: ignore
+
